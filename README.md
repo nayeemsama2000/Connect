@@ -113,19 +113,25 @@ This project can be proudly shown as:\
 
 ------------------------------------------------------------------------
 
-## 📸 Screenshots
+[//]: # ()
+[//]: # (## 📸 Screenshots)
 
--   Splash Screen\
--   Login Screen\
--   User List with Search\
--   Chat Screen (real-time messaging)\
--   Call Screen (Agora integration)
+[//]: # ()
+[//]: # (-   Splash Screen\)
 
-------------------------------------------------------------------------
+[//]: # (-   Login Screen\)
+
+[//]: # (-   User List with Search\)
+
+[//]: # (-   Chat Screen &#40;real-time messaging&#41;\)
+
+[//]: # (-   Call Screen &#40;Agora integration&#41;)
+
+[//]: # (------------------------------------------------------------------------)
 
 ## 👨‍💻 Author
 
-Built with ❤️ by \[Your Name\]
+Built with ❤️ by \[Nayeem Sama\]
 
 ------------------------------------------------------------------------
 
