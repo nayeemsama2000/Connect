@@ -1,0 +1,79 @@
+🛠️ Development Steps
+
+1. Backend Setup (Node.js + Express + MongoDB)
+
+    Created a MongoDB database named connect.
+
+    Chose Option B (self-hosted Node.js backend with Express).
+
+    Built APIs for:
+
+    User creation (login with just name).
+
+    Fetching user list.
+
+    Saving messages (sender, receiver, message).
+
+    Fetching messages between two users using a query filter.
+
+    Integrated Socket.io for real-time messaging.
+
+    Used ngrok to expose backend APIs to physical devices.
+
+2. Frontend (Flutter)
+
+    Built screens:
+
+    Splash Screen → shows app logo.
+
+    Login Screen → only name field (no password).
+
+    User List Screen → displays all registered users with a search bar.
+
+    Chat Screen → shows messages, loads conversation history, scrolls to bottom on open/new messages, real-time updates with Socket.io.
+
+3. Real-time Messaging
+
+    Implemented Socket.io client in Flutter.
+
+    Messages update instantly on both devices.
+
+    Chat screen scrolls to bottom when:
+
+    Opening chat.
+
+    New message received.
+
+4. Voice & Video Calls (Agora Integration)
+
+    Integrated Agora SDK in Flutter.
+
+    Added video calling between users.
+
+    Solved issue where _remoteUid never appeared by adding:
+
+    await _engine.setClientRole(role: ClientRoleType.clientRoleBroadcaster);
+
+
+✅ Fixed remote join issue.
+
+    Users can now make one-to-one video calls seamlessly.
+
+5. Dynamic Base URL (Backend Auto-Update)
+
+    Problem: ngrok URL changes each restart.
+
+    Solution: planned a dynamic base URL fetcher:
+
+    Store latest ngrok URL in a JSON file (GitHub Gist / Firebase).
+
+    Flutter fetches base URL at startup → always up-to-date.
+
+6. Final App Features
+
+    ✅ Simple login with name only
+    ✅ Searchable user list
+    ✅ Real-time 1:1 chat (Socket.io + MongoDB persistence)
+    ✅ Auto-scroll to bottom on chat open/new message
+    ✅ Voice & Video Calls (Agora)
+    ✅ Cross-device support using ngrok
